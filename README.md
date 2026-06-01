@@ -20,7 +20,7 @@ A histogram showing ~5000 counts for |0⟩ and ~5000 counts for |1⟩.
 ### Sample Output:
 ![Histogram](histogram.png)
 
-In the histogram in the repo the counts are 5097 and 4903 respectively for 10000 shots ran in the program. These numbers approach 5000 each as the number of shots ran increases.
+In the histogram in the repo the counts are 50384 and 49616 respectively for 100000 shots ran in the program. These numbers approach 50000 each as the number of shots ran increases (50/50 chance).
 
 ## Simulation Instead of Hardware
 This project uses Qiskit's statevector simulator - no real quantum hardware is required to run the code.
