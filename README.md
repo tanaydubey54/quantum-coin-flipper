@@ -2,6 +2,14 @@
 
 A quantum coin flip simulation using Qiskit that demonstrates superposition and state measurement.
 
+## Features
+
+- Single-qubit quantum coin flip simulation
+- Uses a Hadamard gate to create superposition
+- Configurable number of measurement shots
+- Histogram visualization of results
+- Implemented using Qiskit primitives
+
 ## To run:
 ```
 git clone https://github.com/tanaydubey54/quantum-coin-flipper.git
@@ -9,21 +17,31 @@ cd quantum-coin-flipper
 pip install -r requirements.txt
 python coinflip.py
 ```
-
-## Files:
-- `coinflip.py' - main simulation script
-- 'histogram.png' - output histogram from the last run
-- 'requirements.txt' - dependencies
+After launching the program, enter the desired number of measurement shots when prompted.
 
 ## Output:
-A histogram showing ~5000 counts for |0⟩ and ~5000 counts for |1⟩. 
+The program:
+- simulates repetitive measurement of a qubit in equal superposition
+- displays measurement counts for the states  |0⟩ and |1⟩
+- generates and saves a histogram as `histogram.png` showing roughly equal counts for |0⟩ and |1⟩.
+
 ### Sample Output:
+```
+Enter number of shots: 100000
+Results: {'0': 50384, '1': 49616}
+```
 ![Histogram](histogram.png)
 
 In the histogram in the repo the counts are 50384 and 49616 respectively for 100000 shots ran in the program. These numbers approach 50000 each as the number of shots ran increases (50/50 chance).
 
+## Files:
+- `coinflip.py` - main simulation script
+- `histogram.png` - output histogram from the last run
+- `requirements.txt` - dependencies
+- `CHANGELOG.md` - change log
+
 ## Simulation Instead of Hardware
-This project uses Qiskit's statevector simulator - no real quantum hardware is required to run the code.
+This project uses Qiskit's StatevectorSampler primitive to simulate quantum measurements on a single-qubit circuit. No quantum hardware is required.
 
 ## Requirements:
 - Python 3.12+
@@ -32,10 +50,11 @@ This project uses Qiskit's statevector simulator - no real quantum hardware is r
 
 ## Project Structure:
 quantum-coin-flipper/<br>
+├── CHANGELOG.md<br>
+├── README.md<br>
 ├── coinflip.py<br>
 ├── histogram.png<br>
-├── requirements.txt<br>
-└── README.md<br>
+└── requirements.txt<br>
 
 
 ## Concepts Demonstrated
