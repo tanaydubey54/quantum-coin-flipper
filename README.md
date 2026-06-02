@@ -67,7 +67,7 @@ This project uses Qiskit's StatevectorSampler primitive to simulate quantum meas
 quantum-coin-flipper/<br>
 ├── .gitignore<br>
 ├── CHANGELOG.md<br>
-├── LICENSE
+├── LICENSE<br>
 ├── README.md<br>
 ├── coinflip.py<br>
 ├── histogram.png<br>
