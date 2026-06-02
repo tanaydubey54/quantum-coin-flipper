@@ -22,7 +22,7 @@ After launching the program, enter the desired number of measurement shots when 
 ## Output:
 The program:
 - displays the quantum circuit diagram
-- simulates repetitive measurement of a qubit in equal superposition
+- simulates repeated measurement of a qubit in equal superposition
 - displays measurement counts and calculated probabilities (experimental) for the states  |0⟩ and |1⟩
 - generates and saves a timestamped histogram as histogram_YYYYMMDD_HHMMSS.png showing roughly equal counts for |0⟩ and |1⟩
 
@@ -47,7 +47,7 @@ Histogram saved as histogram_20260602_191530.png
 ```
 ![Histogram](histogram.png)
 
-These numbers approach half of the number of shots each as the number of shots ran increases (50/50 chance).
+As the number of shots increases, the measured frequencies approach 50% for both states.
 
 ## Files:
 - `coinflip.py` - main simulation script
@@ -65,7 +65,9 @@ This project uses Qiskit's StatevectorSampler primitive to simulate quantum meas
 
 ## Project Structure:
 quantum-coin-flipper/<br>
+├── .gitignore<br>
 ├── CHANGELOG.md<br>
+├── LICENSE
 ├── README.md<br>
 ├── coinflip.py<br>
 ├── histogram.png<br>
@@ -82,7 +84,7 @@ quantum-coin-flipper/<br>
 - Qiskit circuit construction
 
 ## How it Works
-A single qubit quantum circuit is initialized with the qubit in the state |0⟩ by default : `qc = QuantumCircuit(1)`
+A single qubit quantum circuit is initialized with the qubit in the state |0⟩ by default : `qc = QuantumCircuit(1, 1)`
 
 On the qubit, the Hadamard Gate is applied, putting the qubit into an equal superposition of |0⟩ and |1⟩ : `qc.h(0)`
 
