@@ -1,4 +1,10 @@
 # Changelog
+## v1.1.1 [June 2 2026]
+- added MIT License for the project to be used freely
+- added input validation for number of shots
+- added Qiskit's `draw` visualization tool in the code to generate circuit diagram 
+- histogram output files are now timestamped as: `histogram_YYYYMMDD_HHMMSS.png` 
+- other minor polishes: bug fixes, addition of .gitignore, wrapped code in main
 ## v1.1.0 [June 1 2026]
 - migrated to proper Qiskit execution pipeline using StatevectorSampler instead of using sample_counts()
 - added classical register to QuantumCircuit
