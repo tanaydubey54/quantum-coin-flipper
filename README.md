@@ -119,7 +119,7 @@ $$\frac{|0\rangle - |1\rangle}{\sqrt{2}}$$
 
 Thus, it takes a definite state and puts it into equal superposition. Measuring the output gives 0 or 1 with exactly 50% probability each:
 - When measuring a qubit, the probability of getting a particular outcome is the square of its amplitude. This is known as the Born rule - it's the fundamental rule in quantum mechanics that connects the mathematics of amplitudes to the physical reality of measurement probabilities.
-- For H|0⟩: P(0) = (1/√2)² = 1/2 = 50%<br>&emsp;&emsp;&emsp;&emsp;P(0) = (1/√2)² = 1/2 = 50%
-- and for H|1⟩: P(1) = (1/√2)² = 1/2 = 50%<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;P(1) = (-1/√2)² = 1/2 = 50%
+- For H|0⟩: P(0) = (1/√2)² = 1/2 = 50%<br>&emsp;&emsp;&emsp;&emsp;P(1) = (1/√2)² = 1/2 = 50%
+- and for H|1⟩: P(0) = (1/√2)² = 1/2 = 50%<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;P(1) = (-1/√2)² = 1/2 = 50%
 
 The Hadamard gate is also its own inverse - if it is applied to the same qubit twice it reverses the transformation and restores the qubit to its original state.
